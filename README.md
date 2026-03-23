@@ -1,5 +1,5 @@
-# **SAE_2.04**
-# 🌐 Projet BDD – *V1.3.0*
+# 👥 SAE_2.04*
+# 💻 Projet BDD – *V1.3.0*
 
 ## 🎯 Description du projet  
 Créer la base de données d'un club secret d'amateurs de tenders de poulet à la raclette
