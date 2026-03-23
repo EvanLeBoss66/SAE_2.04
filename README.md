@@ -1,4 +1,4 @@
-# 👥 SAE_2.04*
+# 👥 SAE_2.04
 # 💻 Projet BDD – *V1.3.0*
 
 ## 🎯 Description du projet  
