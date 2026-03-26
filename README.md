@@ -2,7 +2,7 @@
 # 💻 Projet BDD – *V1.3.0*
 
 ## 🎯 Description du projet  
-Créer la base de données d'un club secret d'amateurs de tenders de poulet à la raclette.
+Créer la base de données d'un club d'amateurs de tenders de poulet à la raclette.
 
 ---
 
