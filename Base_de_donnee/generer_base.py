@@ -7,11 +7,16 @@ fake = Faker('fr_FR')
 
 lot, total = 100000, 1000000
 nb_org, nb_ent, nb_par, nb_plt, nb_sau, nb_ing, nb_mac = 5000, 1000, 1000, 500, 200, 1000, 2000
-org_ids, ent_ids, par_ids, plt_ids, sau_ids, ing_ids = [list(range(1, n+1)) for n in (nb_org, nb_ent, nb_par, nb_plt, nb_sau, nb_ing)]
+org_ids = list(range(1, nb_org + 1))
+ent_ids = list(range(1, nb_ent + 1))
+par_ids = list(range(1, nb_par + 1))
+plt_ids = list(range(1, nb_plt + 1))
+sau_ids = list(range(1, nb_sau + 1))
+ing_ids = list(range(1, nb_ing + 1))
 paires = set()
 
 chevaliers = []
-maitres = []
+maitres = [] 
 
 vraies_sauces = [
     "Béchamel", "Bolognaise", "Mayonnaise", "Ketchup", "Sauce forestière", 
@@ -65,11 +70,13 @@ sv(pd.DataFrame({'ID_CONVICTION': range(1, len(vraies_convictions)+1), 'CONVICTI
 sv(pd.DataFrame({'ID_INGREDIENT': ing_ids, 'NOM': [random.choice(vrais_ingredients) for _ in ing_ids]}), 'ingredient.csv')
 sv(pd.DataFrame({'ID_PLAT': plt_ids, 'INTITULE': [random.choice(vrais_plats) for _ in plt_ids]}), 'plat.csv')
 sv(pd.DataFrame({'ID_SAUCE': sau_ids, 'NOM': [random.choice(vraies_sauces) for _ in sau_ids]}), 'sauce.csv')
-sv(pd.DataFrame({'ID_INGREDIENT': ing_ids[:300]}), 'legume.csv') # Les 300 premiers sont considérés comme légumes
+sv(pd.DataFrame({'ID_INGREDIENT': ing_ids[:300]}), 'legume.csv')
 sv(pd.DataFrame({'ID_ORGANISME': org_ids, 'DATE_DE_CREATION': [fake.date_between('-50y', 'today') for _ in org_ids]}), 'ordre.csv')
 sv(pd.DataFrame({'ID_ORGANISME_1': org_ids, 'NOM': [fake.city()[:50] for _ in org_ids], 'ID_ORGANISME': org_ids}), 'club.csv')
 
-regs = [{'ID_ORGANISME': o, 'ID_REGISTRE': 1, 'DATE_OUVERTURE': fake.date_between('-5y', '-1y'), 'DERNIERE_MODIFICATION': fake.date_between('-1y', 'today')} for o in org_ids]
+
+regs = [{'ID_ORGANISME': o, 'ID_REGISTRE': 1, 'DATE_OUVERTURE': fake.date_between('-5y', '-1y'), 'DERNIERE_MODIFICATION': fake.date_between('-1y', 'today')} 
+        for o in org_ids]
 sv(pd.DataFrame(regs), 'registre.csv')
 
 fcsv = 'tenrac.csv'
