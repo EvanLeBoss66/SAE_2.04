@@ -11,7 +11,6 @@ Créer la base de données d'un club d'amateurs de tenders de poulet à la racle
 | Type | Lien |
 |------|------|
 | 🔨 Gestion de Projet | [Lien](https://github.com/EvanLeBoss66/SAE_2.04/issues) |
-| 🤖 Scripts IA | [Lien](https://docs.google.com/document/d/1tp9jb3jgugoIkOxASUFsSX64nLTkTNe2qrfDQYwsD9M/edit?usp=sharing) |
 
 ---
 
