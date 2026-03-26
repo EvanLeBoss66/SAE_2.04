@@ -6,7 +6,7 @@ Créer la base de données d'un club d'amateurs de tenders de poulet à la racle
 
 ---
 
-## 🔗 Liens Importants
+## 🔗 Lien(s) Important(s)
 
 | Type | Lien |
 |------|------|
